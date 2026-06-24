@@ -191,17 +191,17 @@ const HLASY = [
 function speakWatered() {
   if (!window.speechSynthesis) return;
   const text = HLASY[Math.floor(Math.random() * HLASY.length)];
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = "en-US";
-  u.pitch = 1.8;
-  u.rate = 1.05;
-  u.volume = 1;
-  const voices = speechSynthesis.getVoices();
-  const pick = voices.find(v => v.lang.startsWith("en") && /female|woman|girl|samantha|karen|moira|tessa/i.test(v.name))
-    || voices.find(v => v.lang.startsWith("en"));
-  if (pick) u.voice = pick;
   speechSynthesis.cancel();
-  speechSynthesis.speak(u);
+  const speak = () => {
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "en-US";
+    u.pitch = 1.8;
+    u.rate = 1.05;
+    u.volume = 1;
+    speechSynthesis.speak(u);
+  };
+  if (speechSynthesis.getVoices().length) speak();
+  else speechSynthesis.addEventListener("voiceschanged", speak, { once: true });
 }
 
 // ── Click handler ─────────────────────────────────────────────────────────────
