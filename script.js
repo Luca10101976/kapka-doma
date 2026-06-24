@@ -180,6 +180,31 @@ document.querySelectorAll(".tab-bar a").forEach((a) => {
   });
 });
 
+// ── Hlasová odezva ───────────────────────────────────────────────────────────
+const HLASY = [
+  "Juuu, to je super! Už mi není vedro!",
+  "Jééé, díky moc! Jsem zase šťastná!",
+  "Hurá! Voda! Miluju tě!",
+  "Jupí! Teď budu zase růst!",
+];
+
+function speakWatered() {
+  if (!window.speechSynthesis) return;
+  const text = HLASY[Math.floor(Math.random() * HLASY.length)];
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = "cs-CZ";
+  u.pitch = 1.8;
+  u.rate = 1.1;
+  u.volume = 1;
+  const voices = speechSynthesis.getVoices();
+  const czech = voices.find(v => v.lang.startsWith("cs"));
+  const female = voices.find(v => /female|woman|girl/i.test(v.name));
+  if (czech) u.voice = czech;
+  else if (female) u.voice = female;
+  speechSynthesis.cancel();
+  speechSynthesis.speak(u);
+}
+
 // ── Click handler ─────────────────────────────────────────────────────────────
 document.querySelectorAll("[data-room],[data-task]").forEach((card) => {
   renderCard(card);
@@ -194,6 +219,7 @@ document.querySelectorAll("[data-room],[data-task]").forEach((card) => {
       state.lastWatered[id] = TODAY;
       spawnDrops(card);
       setTimeout(() => spawnConfetti(card), 200);
+      speakWatered();
     }
     saveState();
     renderCard(card);
