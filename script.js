@@ -181,12 +181,7 @@ document.querySelectorAll(".tab-bar a").forEach((a) => {
 });
 
 // ── Hlasová odezva ───────────────────────────────────────────────────────────
-const HLASY = [
-  "Yaaay! Thank you! I feel so much better now!",
-  "Woohoo! Water! You are the best!",
-  "Yippee! Now I can grow again!",
-  "Oh yes! I was so thirsty! Thank you!",
-];
+const HLASY = ["jupííí", "jéééé", "wauuu", "hurááá", "juchůů", "ježíšmarjá"];
 
 function speakWatered() {
   if (!window.speechSynthesis) return;
@@ -194,7 +189,7 @@ function speakWatered() {
   speechSynthesis.cancel();
   const speak = () => {
     const u = new SpeechSynthesisUtterance(text);
-    u.lang = "en-US";
+    u.lang = "cs-CZ";
     u.pitch = 1.8;
     u.rate = 1.05;
     u.volume = 1;
