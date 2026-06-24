@@ -182,25 +182,24 @@ document.querySelectorAll(".tab-bar a").forEach((a) => {
 
 // ── Hlasová odezva ───────────────────────────────────────────────────────────
 const HLASY = [
-  "Juuu, to je super! Už mi není vedro!",
-  "Jééé, díky moc! Jsem zase šťastná!",
-  "Hurá! Voda! Miluju tě!",
-  "Jupí! Teď budu zase růst!",
+  "Yaaay! Thank you! I feel so much better now!",
+  "Woohoo! Water! You are the best!",
+  "Yippee! Now I can grow again!",
+  "Oh yes! I was so thirsty! Thank you!",
 ];
 
 function speakWatered() {
   if (!window.speechSynthesis) return;
   const text = HLASY[Math.floor(Math.random() * HLASY.length)];
   const u = new SpeechSynthesisUtterance(text);
-  u.lang = "cs-CZ";
+  u.lang = "en-US";
   u.pitch = 1.8;
-  u.rate = 1.1;
+  u.rate = 1.05;
   u.volume = 1;
   const voices = speechSynthesis.getVoices();
-  const czech = voices.find(v => v.lang.startsWith("cs"));
-  const female = voices.find(v => /female|woman|girl/i.test(v.name));
-  if (czech) u.voice = czech;
-  else if (female) u.voice = female;
+  const pick = voices.find(v => v.lang.startsWith("en") && /female|woman|girl|samantha|karen|moira|tessa/i.test(v.name))
+    || voices.find(v => v.lang.startsWith("en"));
+  if (pick) u.voice = pick;
   speechSynthesis.cancel();
   speechSynthesis.speak(u);
 }
