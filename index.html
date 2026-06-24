@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kytičky</title>
+    <meta
+      name="description"
+      content="Kytičky - roztomilá domácí aplikace na zalévání kytek podle místností."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="scene">
+      <section class="phone" aria-label="Náhled aplikace Kytičky">
+        <div class="notch" aria-hidden="true"></div>
+
+        <div class="status-bar">
+          <span>9:41</span>
+          <span>▮▮▮ 5G ▰</span>
+        </div>
+
+        <aside class="side-signs left" aria-hidden="true">
+          <span>ありがとう</span>
+          <span>だいすき</span>
+        </aside>
+        <aside class="side-signs right" aria-hidden="true">
+          <span>うれしいな</span>
+          <span>がんばってね</span>
+          <span>おつかれさま</span>
+        </aside>
+
+        <header class="hero-sign">
+          <div class="mascot" aria-label="Maskot kytička">
+            <img src="img/plant_sunflower.png" alt="kytička maskot">
+          </div>
+          <div class="title-sign">
+            <h1>Kytičky</h1>
+            <p>Moc děkuju ♥</p>
+          </div>
+        </header>
+
+        <section class="rooms-grid" aria-label="Místnosti">
+          <article class="room-card living viki" data-room data-freq="6">
+            <header>
+              <h2>Viki</h2>
+              <span>›</span>
+            </header>
+            <div class="illustration living-art" aria-hidden="true" style="background: url('img/plant_palm.png') center center / contain no-repeat #f5f0eb;">
+              <svg class="kawaii-svg" viewBox="0 0 160 120" role="img" style="display:none">
+                <ellipse cx="80" cy="117" rx="34" ry="5" fill="rgba(0,0,0,0.09)"/>
+                <!-- pot -->
+                <path d="M52 85 L48 113 H112 L108 85 Z" fill="#e07a4a" stroke="#2a1808" stroke-width="2.2" stroke-linejoin="round"/>
+                <rect x="46" y="77" width="68" height="12" rx="6" fill="#cc6535" stroke="#2a1808" stroke-width="2.2"/>
+                <!-- pot face -->
+                <circle cx="69" cy="97" r="3.5" fill="#2a1808"/>
+                <circle cx="91" cy="97" r="3.5" fill="#2a1808"/>
+                <circle cx="70.5" cy="95.5" r="1.2" fill="white"/>
+                <circle cx="92.5" cy="95.5" r="1.2" fill="white"/>
+                <path d="M72 105 Q80 111 88 105" fill="none" stroke="#2a1808" stroke-width="2" stroke-linecap="round"/>
+                <ellipse cx="60" cy="102" rx="5.5" ry="3.8" fill="#ff9ab5" opacity="0.75"/>
+                <ellipse cx="100" cy="102" rx="5.5" ry="3.8" fill="#ff9ab5" opacity="0.75"/>
+                <!-- stem -->
+                <line x1="80" y1="77" x2="80" y2="60" stroke="#4aa042" stroke-width="4.5" stroke-linecap="round"/>
+                <!-- leaves on stem -->
+                <ellipse cx="67" cy="72" rx="13" ry="7" fill="#55a84c" stroke="#2a1808" stroke-width="1.8" transform="rotate(-30 67 72)"/>
+                <ellipse cx="95" cy="67" rx="13" ry="7" fill="#4e9e45" stroke="#2a1808" stroke-width="1.8" transform="rotate(25 95 67)"/>
+                <!-- plant body -->
+                <circle cx="80" cy="40" r="35" fill="#90dc6e" stroke="#2a1808" stroke-width="2.8"/>
+                <ellipse cx="67" cy="28" rx="13" ry="8" fill="rgba(255,255,255,0.3)" transform="rotate(-25 67 28)"/>
+                <!-- plant face -->
+                <circle cx="69" cy="38" r="7" fill="#2a1808"/>
+                <circle cx="91" cy="38" r="7" fill="#2a1808"/>
+                <circle cx="71.5" cy="35.5" r="2.4" fill="white"/>
+                <circle cx="93.5" cy="35.5" r="2.4" fill="white"/>
+                <ellipse cx="57" cy="50" rx="8" ry="5.5" fill="#ff9ab5" opacity="0.82"/>
+                <ellipse cx="103" cy="50" rx="8" ry="5.5" fill="#ff9ab5" opacity="0.82"/>
+                <path d="M71 51 Q80 60 89 51" fill="none" stroke="#2a1808" stroke-width="2.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <footer><span class="drop-icon">💧</span> 4 kytky · 1x týdně</footer>
+            <p class="card-note">skříň spec. zalejvátko · palma · truhla · okno</p>
+          </article>
+
+          <article class="room-card bedroom" data-room data-freq="6">
+            <header>
+              <h2>Ložnice</h2>
+              <span>›</span>
+            </header>
+            <div class="illustration bedroom-art" aria-hidden="true" style="background: url('img/plant_daisy.png') center center / contain no-repeat #f5f0eb;">
+              <svg class="kawaii-svg" viewBox="0 0 160 120" role="img" style="display:none">
+                <ellipse cx="80" cy="117" rx="34" ry="5" fill="rgba(0,0,0,0.09)"/>
+                <!-- pot -->
+                <path d="M52 85 L48 113 H112 L108 85 Z" fill="#9a7ccc" stroke="#2a1808" stroke-width="2.2" stroke-linejoin="round"/>
+                <rect x="46" y="77" width="68" height="12" rx="6" fill="#8568b8" stroke="#2a1808" stroke-width="2.2"/>
+                <!-- pot face - sleepy -->
+                <path d="M63 95 Q69 89 75 95" fill="none" stroke="#2a1808" stroke-width="2.6" stroke-linecap="round"/>
+                <path d="M85 95 Q91 89 97 95" fill="none" stroke="#2a1808" stroke-width="2.6" stroke-linecap="round"/>
+                <path d="M72 105 Q80 111 88 105" fill="none" stroke="#2a1808" stroke-width="2" stroke-linecap="round"/>
+                <ellipse cx="60" cy="102" rx="5.5" ry="3.8" fill="#ff9ab5" opacity="0.75"/>
+                <ellipse cx="100" cy="102" rx="5.5" ry="3.8" fill="#ff9ab5" opacity="0.75"/>
+                <!-- moon -->
+                <path d="M20 25 A14 14 0 1 1 34 42 A10 10 0 1 0 20 25" fill="#ffd36c" stroke="#2a1808" stroke-width="1.8"/>
+                <!-- stem -->
+                <line x1="80" y1="77" x2="80" y2="60" stroke="#4aa042" stroke-width="4.5" stroke-linecap="round"/>
+                <!-- plant body -->
+                <circle cx="80" cy="40" r="35" fill="#b2de7e" stroke="#2a1808" stroke-width="2.8"/>
+                <ellipse cx="67" cy="28" rx="13" ry="8" fill="rgba(255,255,255,0.3)" transform="rotate(-25 67 28)"/>
+                <!-- sleepy eyes on plant -->
+                <path d="M61 37 Q69 29 77 37" fill="none" stroke="#2a1808" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M83 37 Q91 29 99 37" fill="none" stroke="#2a1808" stroke-width="3.5" stroke-linecap="round"/>
+                <ellipse cx="57" cy="50" rx="8" ry="5.5" fill="#ff9ab5" opacity="0.82"/>
+                <ellipse cx="103" cy="50" rx="8" ry="5.5" fill="#ff9ab5" opacity="0.82"/>
+                <path d="M73 52 Q80 59 87 52" fill="none" stroke="#2a1808" stroke-width="2.8" stroke-linecap="round"/>
+                <!-- zzz -->
+                <text x="107" y="18" font-size="10" fill="#9a7ccc" font-weight="900" font-family="sans-serif">z</text>
+                <text x="116" y="10" font-size="13" fill="#b09de0" font-weight="900" font-family="sans-serif">Z</text>
+                <!-- leaves -->
+                <ellipse cx="67" cy="8" rx="13" ry="7" fill="#55a84c" stroke="#2a1808" stroke-width="1.8" transform="rotate(-35 67 8)"/>
+                <ellipse cx="88" cy="6" rx="13" ry="7" fill="#62bc58" stroke="#2a1808" stroke-width="1.8" transform="rotate(25 88 6)"/>
+              </svg>
+            </div>
+            <footer><span class="drop-icon">💧</span> 1x týdně min.</footer>
+            <p class="card-note">1 kytka na okně</p>
+          </article>
+
+          <article class="room-card kitchen" data-room data-freq="6">
+            <header>
+              <h2>Kuchyň</h2>
+              <span>›</span>
+            </header>
+            <div class="illustration kitchen-art" aria-hidden="true" style="background: url('img/plant_sunflower.png') center center / contain no-repeat #f5f0eb;">
+              <svg class="kawaii-svg" viewBox="0 0 160 120" role="img" style="display:none">
+                <ellipse cx="80" cy="117" rx="34" ry="5" fill="rgba(0,0,0,0.09)"/>
+                <!-- pot -->
+                <path d="M52 85 L48 113 H112 L108 85 Z" fill="#e07a4a" stroke="#2a1808" stroke-width="2.2" stroke-linejoin="round"/>
+                <rect x="46" y="77" width="68" height="12" rx="6" fill="#cc6535" stroke="#2a1808" stroke-width="2.2"/>
+                <!-- pot face -->
+                <circle cx="69" cy="97" r="3.5" fill="#2a1808"/>
+                <circle cx="91" cy="97" r="3.5" fill="#2a1808"/>
+                <circle cx="70.5" cy="95.5" r="1.2" fill="white"/>
+                <circle cx="92.5" cy="95.5" r="1.2" fill="white"/>
+                <path d="M72 105 Q80 111 88 105" fill="none" stroke="#2a1808" stroke-width="2" stroke-linecap="round"/>
+                <ellipse cx="60" cy="102" rx="5.5" ry="3.8" fill="#ff9ab5" opacity="0.75"/>
+                <ellipse cx="100" cy="102" rx="5.5" ry="3.8" fill="#ff9ab5" opacity="0.75"/>
+                <!-- stem + leaves -->
+                <line x1="80" y1="77" x2="80" y2="55" stroke="#4aa042" stroke-width="4.5" stroke-linecap="round"/>
+                <ellipse cx="67" cy="70" rx="13" ry="7" fill="#55a84c" stroke="#2a1808" stroke-width="1.8" transform="rotate(-28 67 70)"/>
+                <ellipse cx="95" cy="65" rx="13" ry="7" fill="#4e9e45" stroke="#2a1808" stroke-width="1.8" transform="rotate(22 95 65)"/>
+                <!-- tulip petals -->
+                <ellipse cx="68" cy="36" rx="11" ry="18" fill="#c678d4" stroke="#2a1808" stroke-width="2.2" transform="rotate(-12 68 36)"/>
+                <ellipse cx="80" cy="32" rx="11" ry="20" fill="#da8ee8" stroke="#2a1808" stroke-width="2.2"/>
+                <ellipse cx="92" cy="36" rx="11" ry="18" fill="#c678d4" stroke="#2a1808" stroke-width="2.2" transform="rotate(12 92 36)"/>
+                <!-- tulip face -->
+                <circle cx="74" cy="38" r="5.5" fill="#2a1808"/>
+                <circle cx="86" cy="38" r="5.5" fill="#2a1808"/>
+                <circle cx="76" cy="35.5" r="1.9" fill="white"/>
+                <circle cx="88" cy="35.5" r="1.9" fill="white"/>
+                <ellipse cx="65" cy="47" rx="6.5" ry="4.5" fill="#ff9ab5" opacity="0.82"/>
+                <ellipse cx="95" cy="47" rx="6.5" ry="4.5" fill="#ff9ab5" opacity="0.82"/>
+                <path d="M73 49 Q80 56 87 49" fill="none" stroke="#2a1808" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <footer><span class="drop-icon green">💧</span> 2 kytky · 1x týdně</footer>
+            <p class="card-note">okno · stůl</p>
+          </article>
+
+          <article class="room-card tynka" data-room data-freq="6">
+            <header>
+              <h2>U Týnky</h2>
+              <span>›</span>
+            </header>
+            <div class="illustration tynka-art" aria-hidden="true" style="background: url('img/plant_tulip.png') center center / contain no-repeat #f5f0eb;">
+              <svg class="kawaii-svg" viewBox="0 0 220 100" role="img" style="display:none">
+                <!-- window frame -->
+                <rect x="132" y="4" width="78" height="72" rx="9" fill="#d4eeff" stroke="#2a1808" stroke-width="2.2"/>
+                <line x1="171" y1="4" x2="171" y2="76" stroke="#2a1808" stroke-width="1.8"/>
+                <line x1="132" y1="40" x2="210" y2="40" stroke="#2a1808" stroke-width="1.8"/>
+                <!-- kawaii sun in window -->
+                <circle cx="152" cy="24" r="14" fill="#ffd36c" stroke="#2a1808" stroke-width="2"/>
+                <path d="M152 7v-4M152 44v4M169 24h4M131 24h-4M163 13l3-3M141 35l-3 3M163 35l3 3M141 13l-3-3" stroke="#ffd36c" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="147" cy="22" r="3" fill="#2a1808"/>
+                <circle cx="157" cy="22" r="3" fill="#2a1808"/>
+                <circle cx="148.3" cy="20.5" r="1.1" fill="white"/>
+                <circle cx="158.3" cy="20.5" r="1.1" fill="white"/>
+                <path d="M148 29 Q152 34 156 29" fill="none" stroke="#2a1808" stroke-width="2" stroke-linecap="round"/>
+                <ellipse cx="142" cy="28" rx="4.5" ry="3" fill="#ff9ab5" opacity="0.8"/>
+                <ellipse cx="162" cy="28" rx="4.5" ry="3" fill="#ff9ab5" opacity="0.8"/>
+                <!-- pot -->
+                <path d="M34 84 L30 98 H96 L92 84 Z" fill="#e07a4a" stroke="#2a1808" stroke-width="2.2" stroke-linejoin="round"/>
+                <rect x="28" y="75" width="70" height="12" rx="6" fill="#cc6535" stroke="#2a1808" stroke-width="2.2"/>
+                <!-- pot face -->
+                <circle cx="55" cy="88" r="3.5" fill="#2a1808"/>
+                <circle cx="72" cy="88" r="3.5" fill="#2a1808"/>
+                <circle cx="56.5" cy="86.5" r="1.2" fill="white"/>
+                <circle cx="73.5" cy="86.5" r="1.2" fill="white"/>
+                <path d="M57 95 Q63 100 70 95" fill="none" stroke="#2a1808" stroke-width="2" stroke-linecap="round"/>
+                <ellipse cx="46" cy="92" rx="5" ry="3.5" fill="#ff9ab5" opacity="0.75"/>
+                <ellipse cx="80" cy="92" rx="5" ry="3.5" fill="#ff9ab5" opacity="0.75"/>
+                <!-- stem -->
+                <line x1="63" y1="75" x2="63" y2="55" stroke="#4aa042" stroke-width="4.5" stroke-linecap="round"/>
+                <!-- plant body -->
+                <circle cx="63" cy="37" r="30" fill="#90dc6e" stroke="#2a1808" stroke-width="2.8"/>
+                <ellipse cx="52" cy="26" rx="11" ry="7" fill="rgba(255,255,255,0.3)" transform="rotate(-25 52 26)"/>
+                <!-- plant face -->
+                <circle cx="54" cy="35" r="6" fill="#2a1808"/>
+                <circle cx="72" cy="35" r="6" fill="#2a1808"/>
+                <circle cx="56.2" cy="32.8" r="2" fill="white"/>
+                <circle cx="74.2" cy="32.8" r="2" fill="white"/>
+                <ellipse cx="44" cy="46" rx="7" ry="4.8" fill="#ff9ab5" opacity="0.82"/>
+                <ellipse cx="82" cy="46" rx="7" ry="4.8" fill="#ff9ab5" opacity="0.82"/>
+                <path d="M55 48 Q63 56 71 48" fill="none" stroke="#2a1808" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- leaves -->
+                <ellipse cx="50" cy="8" rx="13" ry="7" fill="#55a84c" stroke="#2a1808" stroke-width="1.8" transform="rotate(-38 50 8)"/>
+                <ellipse cx="72" cy="6" rx="13" ry="7" fill="#62bc58" stroke="#2a1808" stroke-width="1.8" transform="rotate(22 72 6)"/>
+              </svg>
+            </div>
+            <footer><span class="drop-icon">💧</span> 3 kytky · 1x týdně</footer>
+            <p class="card-note">okno · tiskárna · skříň</p>
+          </article>
+
+          <article class="room-card april turtle-card" data-task data-freq="2">
+            <header>
+              <h2>Apríl</h2>
+              <span>›</span>
+            </header>
+            <div class="illustration turtle-art" aria-hidden="true" style="background: url('img/C15FE5DA-37A1-492D-BB36-39B1BAB7645C.png') center center / cover no-repeat #f5f0eb;">
+              <svg class="kawaii-svg" viewBox="0 0 150 100" role="img" style="display:none">
+                <ellipse cx="75" cy="97" rx="40" ry="5" fill="rgba(0,0,0,0.1)"/>
+                <!-- back legs -->
+                <ellipse cx="38" cy="80" rx="14" ry="10" fill="#8dd460" stroke="#2a1808" stroke-width="2" transform="rotate(-15 38 80)"/>
+                <ellipse cx="112" cy="80" rx="14" ry="10" fill="#8dd460" stroke="#2a1808" stroke-width="2" transform="rotate(15 112 80)"/>
+                <!-- front legs -->
+                <ellipse cx="44" cy="50" rx="12" ry="9" fill="#8dd460" stroke="#2a1808" stroke-width="2" transform="rotate(20 44 50)"/>
+                <ellipse cx="106" cy="50" rx="12" ry="9" fill="#8dd460" stroke="#2a1808" stroke-width="2" transform="rotate(-20 106 50)"/>
+                <!-- shell outline + fill -->
+                <ellipse cx="75" cy="68" rx="46" ry="28" fill="#4e8e32" stroke="#2a1808" stroke-width="2.5"/>
+                <ellipse cx="75" cy="64" rx="42" ry="24" fill="#6cb840"/>
+                <!-- shell hex pattern -->
+                <ellipse cx="75" cy="58" rx="14" ry="12" fill="#4e8e32" opacity="0.55"/>
+                <ellipse cx="52" cy="66" rx="12" ry="9" fill="#4e8e32" opacity="0.4" transform="rotate(-18 52 66)"/>
+                <ellipse cx="98" cy="66" rx="12" ry="9" fill="#4e8e32" opacity="0.4" transform="rotate(18 98 66)"/>
+                <ellipse cx="75" cy="78" rx="10" ry="7" fill="#4e8e32" opacity="0.35"/>
+                <!-- shell highlight -->
+                <ellipse cx="62" cy="50" rx="10" ry="6" fill="rgba(255,255,255,0.22)" transform="rotate(-20 62 50)"/>
+                <!-- tail -->
+                <ellipse cx="75" cy="93" rx="7" ry="5" fill="#8dd460" stroke="#2a1808" stroke-width="1.8"/>
+                <!-- neck -->
+                <rect x="60" y="42" width="30" height="16" rx="8" fill="#8dd460" stroke="#2a1808" stroke-width="2"/>
+                <!-- head -->
+                <circle cx="75" cy="30" r="27" fill="#a0e070" stroke="#2a1808" stroke-width="2.8"/>
+                <ellipse cx="63" cy="22" rx="10" ry="6" fill="rgba(255,255,255,0.28)" transform="rotate(-20 63 22)"/>
+                <!-- big eyes -->
+                <circle cx="63" cy="27" r="9.5" fill="#2a1808"/>
+                <circle cx="87" cy="27" r="9.5" fill="#2a1808"/>
+                <circle cx="66.5" cy="23.5" r="3.2" fill="white"/>
+                <circle cx="90.5" cy="23.5" r="3.2" fill="white"/>
+                <circle cx="61" cy="30" r="1.5" fill="white" opacity="0.5"/>
+                <circle cx="85" cy="30" r="1.5" fill="white" opacity="0.5"/>
+                <!-- big blush -->
+                <ellipse cx="48" cy="38" rx="11" ry="7" fill="#ff9ab5" opacity="0.85"/>
+                <ellipse cx="102" cy="38" rx="11" ry="7" fill="#ff9ab5" opacity="0.85"/>
+                <!-- smile -->
+                <path d="M66 40 Q75 50 84 40" fill="none" stroke="#2a1808" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <footer><span class="drop-icon amber">●</span> Krmit každý 2. den</footer>
+            <p class="card-note">samostatné okýnko pro želvu</p>
+          </article>
+
+          <article class="room-card bird-care" data-task data-freq="1" data-start="2026-06-28">
+            <header>
+              <h2>Ptáčci</h2>
+              <span>›</span>
+            </header>
+            <div class="illustration bird-care-art" aria-hidden="true" style="background: url('img/ptacci1.png') center center / contain no-repeat #f5f0eb;"></div>
+            <footer><span class="drop-icon amber">●</span> Voda + jídlo</footer>
+            <p class="card-note">voda do truhlíku · dát jídlo</p>
+          </article>
+
+          <article class="room-card balcony" data-room data-freq="3">
+            <header>
+              <h2>Balkon</h2>
+              <span>›</span>
+            </header>
+            <div class="illustration balcony-art" aria-hidden="true" style="background: url('img/plant_daisy.png') 14% center / auto 95% no-repeat, url('img/AD6FA197-8C81-42D6-B614-CD63441E4C8D.png') 50% center / auto 95% no-repeat, url('img/plant_hyacinth.png') 86% center / auto 95% no-repeat, #f5f0eb;">
+              <svg class="kawaii-svg" viewBox="0 0 220 100" role="img" style="display:none">
+                <!-- railing -->
+                <rect x="6" y="74" width="208" height="8" rx="4" fill="#c8a882" stroke="#2a1808" stroke-width="1.8"/>
+                <rect x="6" y="62" width="208" height="5" rx="2.5" fill="#d4b896" stroke="#2a1808" stroke-width="1.5"/>
+                <rect x="26" y="62" width="5" height="12" rx="2.5" fill="#c8a882" stroke="#2a1808" stroke-width="1.5"/>
+                <rect x="62" y="62" width="5" height="12" rx="2.5" fill="#c8a882" stroke="#2a1808" stroke-width="1.5"/>
+                <rect x="152" y="62" width="5" height="12" rx="2.5" fill="#c8a882" stroke="#2a1808" stroke-width="1.5"/>
+                <rect x="188" y="62" width="5" height="12" rx="2.5" fill="#c8a882" stroke="#2a1808" stroke-width="1.5"/>
+                <!-- pot 1 -->
+                <path d="M22 72 L18 86 H74 L70 72 Z" fill="#e07a4a" stroke="#2a1808" stroke-width="2" stroke-linejoin="round"/>
+                <rect x="16" y="64" width="60" height="11" rx="5.5" fill="#cc6535" stroke="#2a1808" stroke-width="2"/>
+                <!-- pot 1 face -->
+                <circle cx="37" cy="76" r="3.2" fill="#2a1808"/>
+                <circle cx="53" cy="76" r="3.2" fill="#2a1808"/>
+                <circle cx="38.2" cy="74.8" r="1.1" fill="white"/>
+                <circle cx="54.2" cy="74.8" r="1.1" fill="white"/>
+                <path d="M39 82 Q45 87 51 82" fill="none" stroke="#2a1808" stroke-width="1.8" stroke-linecap="round"/>
+                <ellipse cx="29" cy="79" rx="4.5" ry="3" fill="#ff9ab5" opacity="0.75"/>
+                <ellipse cx="62" cy="79" rx="4.5" ry="3" fill="#ff9ab5" opacity="0.75"/>
+                <!-- plant 1 stem + body -->
+                <line x1="45" y1="64" x2="45" y2="48" stroke="#4aa042" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="45" cy="32" r="24" fill="#90dc6e" stroke="#2a1808" stroke-width="2.5"/>
+                <ellipse cx="36" cy="22" rx="9" ry="6" fill="rgba(255,255,255,0.28)" transform="rotate(-25 36 22)"/>
+                <circle cx="38" cy="30" r="5.5" fill="#2a1808"/>
+                <circle cx="52" cy="30" r="5.5" fill="#2a1808"/>
+                <circle cx="39.8" cy="27.8" r="1.8" fill="white"/>
+                <circle cx="53.8" cy="27.8" r="1.8" fill="white"/>
+                <ellipse cx="30" cy="39" rx="6" ry="4" fill="#ff9ab5" opacity="0.82"/>
+                <ellipse cx="60" cy="39" rx="6" ry="4" fill="#ff9ab5" opacity="0.82"/>
+                <path d="M39 41 Q45 48 51 41" fill="none" stroke="#2a1808" stroke-width="2.2" stroke-linecap="round"/>
+                <ellipse cx="34" cy="9" rx="11" ry="6" fill="#55a84c" stroke="#2a1808" stroke-width="1.6" transform="rotate(-35 34 9)"/>
+                <ellipse cx="54" cy="7" rx="11" ry="6" fill="#62bc58" stroke="#2a1808" stroke-width="1.6" transform="rotate(22 54 7)"/>
+                <!-- kawaii sun -->
+                <circle cx="110" cy="28" r="19" fill="#ffd36c" stroke="#2a1808" stroke-width="2.2"/>
+                <path d="M110 6v-5M110 51v5M133 28h5M82 28h-5M127 11l4-4M93 45l-4 4M127 45l4 4M93 11l-4-4" stroke="#ffd36c" stroke-width="2.5" stroke-linecap="round"/>
+                <ellipse cx="100" cy="20" rx="8" ry="5" fill="rgba(255,255,255,0.25)" transform="rotate(-25 100 20)"/>
+                <circle cx="103" cy="25" r="4" fill="#2a1808"/>
+                <circle cx="117" cy="25" r="4" fill="#2a1808"/>
+                <circle cx="104.6" cy="23" r="1.4" fill="white"/>
+                <circle cx="118.6" cy="23" r="1.4" fill="white"/>
+                <path d="M104 34 Q110 40 116 34" fill="none" stroke="#2a1808" stroke-width="2.2" stroke-linecap="round"/>
+                <ellipse cx="95" cy="33" rx="6.5" ry="4" fill="#ff9ab5" opacity="0.8"/>
+                <ellipse cx="125" cy="33" rx="6.5" ry="4" fill="#ff9ab5" opacity="0.8"/>
+                <!-- pot 2 -->
+                <path d="M150 72 L146 86 H202 L198 72 Z" fill="#9a7ccc" stroke="#2a1808" stroke-width="2" stroke-linejoin="round"/>
+                <rect x="144" y="64" width="60" height="11" rx="5.5" fill="#8568b8" stroke="#2a1808" stroke-width="2"/>
+                <!-- pot 2 face -->
+                <circle cx="165" cy="76" r="3.2" fill="#2a1808"/>
+                <circle cx="181" cy="76" r="3.2" fill="#2a1808"/>
+                <circle cx="166.2" cy="74.8" r="1.1" fill="white"/>
+                <circle cx="182.2" cy="74.8" r="1.1" fill="white"/>
+                <path d="M167 82 Q173 87 179 82" fill="none" stroke="#2a1808" stroke-width="1.8" stroke-linecap="round"/>
+                <ellipse cx="157" cy="79" rx="4.5" ry="3" fill="#ff9ab5" opacity="0.75"/>
+                <ellipse cx="190" cy="79" rx="4.5" ry="3" fill="#ff9ab5" opacity="0.75"/>
+                <!-- plant 2 stem + body -->
+                <line x1="173" y1="64" x2="173" y2="48" stroke="#4aa042" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="173" cy="32" r="24" fill="#b2de7e" stroke="#2a1808" stroke-width="2.5"/>
+                <ellipse cx="164" cy="22" rx="9" ry="6" fill="rgba(255,255,255,0.28)" transform="rotate(-25 164 22)"/>
+                <circle cx="166" cy="30" r="5.5" fill="#2a1808"/>
+                <circle cx="180" cy="30" r="5.5" fill="#2a1808"/>
+                <circle cx="167.8" cy="27.8" r="1.8" fill="white"/>
+                <circle cx="181.8" cy="27.8" r="1.8" fill="white"/>
+                <ellipse cx="158" cy="39" rx="6" ry="4" fill="#ff9ab5" opacity="0.82"/>
+                <ellipse cx="188" cy="39" rx="6" ry="4" fill="#ff9ab5" opacity="0.82"/>
+                <path d="M167 41 Q173 48 179 41" fill="none" stroke="#2a1808" stroke-width="2.2" stroke-linecap="round"/>
+                <ellipse cx="162" cy="9" rx="11" ry="6" fill="#55a84c" stroke="#2a1808" stroke-width="1.6" transform="rotate(-30 162 9)"/>
+                <ellipse cx="182" cy="7" rx="11" ry="6" fill="#62bc58" stroke="#2a1808" stroke-width="1.6" transform="rotate(20 182 7)"/>
+              </svg>
+            </div>
+            <footer><span class="drop-icon green">💧</span> 2x týdně ideálně</footer>
+          </article>
+
+          <article class="room-card bird-care-OLD" data-task-DISABLED data-freq="1" data-start="2026-06-28" style="display:none">
+            <header>
+              <h2>Ptáčci</h2>
+              <span>›</span>
+            </header>
+            <div class="illustration bird-care-art" aria-hidden="true" style="background: url('img/ptacci1.png') center center / contain no-repeat #f5f0eb;">              <svg class="kawaii-svg" viewBox="0 0 150 100" role="img" style="display:none">
+                <!-- perch -->
+                <rect x="8" y="74" width="134" height="8" rx="4" fill="#c8a882" stroke="#2a1808" stroke-width="2"/>
+                <!-- bird 1 - yellow -->
+                <!-- wing -->
+                <ellipse cx="22" cy="58" rx="14" ry="9" fill="#f0d060" stroke="#2a1808" stroke-width="1.8" transform="rotate(-20 22 58)"/>
+                <!-- body -->
+                <ellipse cx="38" cy="52" rx="24" ry="22" fill="#f5dc68" stroke="#2a1808" stroke-width="2.5"/>
+                <!-- belly highlight -->
+                <ellipse cx="38" cy="58" rx="14" ry="12" fill="#fff9d0" opacity="0.55"/>
+                <!-- head tuft -->
+                <ellipse cx="36" cy="26" rx="7" ry="11" fill="#f5dc68" stroke="#2a1808" stroke-width="2" transform="rotate(8 36 26)"/>
+                <ellipse cx="28" cy="28" rx="6" ry="9" fill="#f0d060" stroke="#2a1808" stroke-width="1.8" transform="rotate(-15 28 28)"/>
+                <!-- eyes -->
+                <circle cx="30" cy="47" r="7" fill="#2a1808"/>
+                <circle cx="46" cy="47" r="7" fill="#2a1808"/>
+                <circle cx="32.5" cy="44.5" r="2.4" fill="white"/>
+                <circle cx="48.5" cy="44.5" r="2.4" fill="white"/>
+                <!-- beak -->
+                <path d="M35 56 L38 62 L41 56 Z" fill="#f0a030" stroke="#2a1808" stroke-width="1.5" stroke-linejoin="round"/>
+                <!-- blush -->
+                <ellipse cx="21" cy="57" rx="6.5" ry="4.5" fill="#ff9ab5" opacity="0.82"/>
+                <ellipse cx="55" cy="57" rx="6.5" ry="4.5" fill="#ff9ab5" opacity="0.82"/>
+                <!-- feet -->
+                <path d="M30 74 L27 82M30 74 L32 82M30 74 L35 80" stroke="#f0a030" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M46 74 L43 82M46 74 L48 82M46 74 L51 80" stroke="#f0a030" stroke-width="2.2" stroke-linecap="round"/>
+
+                <!-- heart between birds -->
+                <path d="M75 44 C75 40 69 40 69 44 C69 48 75 53 75 53 C75 53 81 48 81 44 C81 40 75 40 75 44Z" fill="#ffb7c7" stroke="#2a1808" stroke-width="1.5"/>
+
+                <!-- bird 2 - blue -->
+                <!-- wing -->
+                <ellipse cx="128" cy="58" rx="14" ry="9" fill="#7ab8e8" stroke="#2a1808" stroke-width="1.8" transform="rotate(20 128 58)"/>
+                <!-- body -->
+                <ellipse cx="112" cy="52" rx="24" ry="22" fill="#88c0f0" stroke="#2a1808" stroke-width="2.5"/>
+                <!-- belly highlight -->
+                <ellipse cx="112" cy="58" rx="14" ry="12" fill="#d8eeff" opacity="0.6"/>
+                <!-- head tuft -->
+                <ellipse cx="114" cy="26" rx="7" ry="11" fill="#88c0f0" stroke="#2a1808" stroke-width="2" transform="rotate(-8 114 26)"/>
+                <ellipse cx="122" cy="28" rx="6" ry="9" fill="#7ab8e8" stroke="#2a1808" stroke-width="1.8" transform="rotate(15 122 28)"/>
+                <!-- eyes -->
+                <circle cx="104" cy="47" r="7" fill="#2a1808"/>
+                <circle cx="120" cy="47" r="7" fill="#2a1808"/>
+                <circle cx="106.5" cy="44.5" r="2.4" fill="white"/>
+                <circle cx="122.5" cy="44.5" r="2.4" fill="white"/>
+                <!-- beak -->
+                <path d="M109 56 L112 62 L115 56 Z" fill="#f0a030" stroke="#2a1808" stroke-width="1.5" stroke-linejoin="round"/>
+                <!-- blush -->
+                <ellipse cx="95" cy="57" rx="6.5" ry="4.5" fill="#ff9ab5" opacity="0.82"/>
+                <ellipse cx="129" cy="57" rx="6.5" ry="4.5" fill="#ff9ab5" opacity="0.82"/>
+                <!-- feet -->
+                <path d="M104 74 L101 82M104 74 L106 82M104 74 L109 80" stroke="#f0a030" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M120 74 L117 82M120 74 L122 82M120 74 L125 80" stroke="#f0a030" stroke-width="2.2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <footer><span class="drop-icon amber">●</span> Voda + jídlo</footer>
+            <p class="card-note">voda do truhlíku · dát jídlo</p>
+          </article>
+        </section>
+
+        <nav class="tab-bar" aria-label="Navigace aplikace">
+          <a class="active" href="#" data-tab="rooms">Všechny</a>
+          <a href="#" data-tab="today">Dnes</a>
+        </nav>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
